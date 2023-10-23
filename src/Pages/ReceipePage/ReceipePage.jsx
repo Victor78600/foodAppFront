@@ -35,7 +35,7 @@ function ReceipePage() {
   if (!oneReceipe) {
     return <p>Error: Receipe not found</p>;
   }
-  //   const ingredients = [...oneReceipe.ingredients];
+  const ingredients = oneReceipe.ingredients;
 
   return (
     <>
@@ -43,15 +43,18 @@ function ReceipePage() {
       <div>
         <img className="photo" src={oneReceipe.image} />
         <h2>{oneReceipe.name}</h2>
-        {console.log(oneReceipe.image)}
+        {console.log(ingredients)}
         <div>
-          {/* {ingredients.map((ingredient) => {
+          {ingredients.map((ingredient) => {
             return (
-              <div key={ingredient}>
-                <p>{ingredient}</p>
-              </div>
+              <>
+                <li>
+                  Ingredient : {ingredient.ingredient} Quantity :
+                  {ingredient.quantity}
+                </li>
+              </>
             );
-          })} */}
+          })}
         </div>
         <p>Instructions : {oneReceipe.instructions}</p>
         <p>Area : {oneReceipe.area}</p>
