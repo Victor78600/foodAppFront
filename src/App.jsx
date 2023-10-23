@@ -11,15 +11,17 @@ import Navbar from "./components/NavBar";
 
 function App() {
   return (
-    <Routes>
+    <>
       <Navbar />
-      <Route path="/" element={<HomePage />} />
-      <Route path="/search" element={<SearchPage />} />
-      <Route path="/search/{filter}" element={<FilterPage />} />
-      <Route path="/{mealID}" element={<ReceipePage />} />
-      <Route path="/favorites" element={<FavPage />} />
-      <Route path="/create" element={<CreatePage />} />
-    </Routes>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/search" element={<SearchPage />} />
+        <Route path="/search/:filter" element={<FilterPage />} />
+        <Route path="/meals/:id" element={<ReceipePage />} />
+        <Route path="/favorites" element={<FavPage />} />
+        <Route path="/create" element={<CreatePage />} />
+      </Routes>
+    </>
   );
 }
 
