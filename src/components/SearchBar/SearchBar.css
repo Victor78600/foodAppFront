@@ -1,0 +1,112 @@
+.top-search {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 5rem;
+  /* padding: 5px 5px; */
+  width: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Distribute space between left and right sections */
+  align-items: center;
+  z-index: 50;
+}
+
+/* .search-bar-elements {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+} */
+
+.left-section,
+.right-section {
+  display: flex; /* Use flexbox for inner layout */
+  align-items: center; /* Center vertically within each section */
+}
+
+.left-section {
+  padding: 0 10px;
+}
+
+.right-section {
+  margin-right: 10px;
+}
+
+/* .top-search a {
+  color: whitesmoke;
+  font-weight: bold;
+  text-decoration: none;
+   padding: 5px 10px; 
+} */
+
+/* .search-imput {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #d14f4f;
+  border-radius: 20px;
+  outline: none;
+  font-size: 16px;
+} */
+
+.search-section {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #8d2b2b;
+  border-right: none;
+  padding: 5px;
+  height: 28px;
+  background-color: whitesmoke;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+  color: #8d2b2b;
+}
+
+.searchTerm:focus {
+  color: #8d2b2b;
+}
+
+.searchButton {
+  width: 40px;
+  height: 43px;
+
+  /* border: 1px solid #8d2b2b; */
+  background: #8d2b2b;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.wrap {
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logoBonApp img {
+  margin-top: 10px;
+  margin-left: 4vw;
+  max-width: 7vw;
+  min-width: 4rem;
+  margin-bottom: 0rem;
+}
+
+.LoginButton {
+  padding-right: 5vw;
+}
+
+#searchIcon {
+  height: 25px;
+  margin-left: -0.7rem;
+  margin-top: -1rem;
+}

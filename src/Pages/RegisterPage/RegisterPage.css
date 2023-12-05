@@ -1,0 +1,35 @@
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.username {
+  margin-bottom: 15px;
+  text-align: center;
+  list-style: none;
+}
+
+.password {
+  margin-bottom: 30px;
+  text-align: center;
+  list-style: none;
+}
+
+.inputpwd {
+  width: 15vw;
+  min-width: 12rem;
+  max-width: 350px;
+  padding: 3px;
+  margin-top: 0.5rem;
+  border: 2px solid #8d2b2b;
+  border-radius: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.button {
+  text-align: center;
+  margin-bottom: 20px;
+}

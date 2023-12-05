@@ -1,0 +1,32 @@
+nav {
+  /*  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(221, 141, 50);
+  margin-bottom: 3vh; */
+
+  & img {
+    width: 2.3rem;
+    padding: 0.6rem;
+  }
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #8d2b2b;
+  display: flex;
+  justify-content: space-around;
+  z-index: 50;
+
+  /* padding: 7px; */
+  /* margin-bottom: 3vh; */
+}
+
+.bottom-nav a {
+  color: #fff;
+  text-decoration: none;
+  /* padding: 5px 10px; */
+}

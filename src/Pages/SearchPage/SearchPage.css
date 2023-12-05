@@ -1,0 +1,14 @@
+/* @import "react-alice-carousel/lib/alice-carousel.css"; */
+
+.newLink > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 17rem;
+}
+
+.react-slideshow-container .default-nav {
+  background: none;
+}
