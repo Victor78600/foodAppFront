@@ -2,10 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import "./NavBar.css";
-import HomePage from "../Pages/HomePage/HomePage";
-import SearchPage from "../Pages/SearchPage/SearchPage";
-import FavPage from "../Pages/FavPage/favPage";
-import CreatePage from "../Pages/CreatePage/CreatePage";
 
 import HomepageIcon from "./images/homepage-icon.png";
 import DiscoverpageIcon from "./images/discoverpage-icon.png";
@@ -13,6 +9,7 @@ import FavpageIcon from "./images/favpage-icon.png";
 import CreatepageIcon from "./images/createpage-icon.png";
 
 function NavBar() {
+
   return (
     <>
       <nav className="bottom-nav">

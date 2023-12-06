@@ -3,11 +3,13 @@ import { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import "./ConnectionPage.css";
+import { useNavigate } from "react-router-dom";
 
 function ConnexionPage() {
   const [members, setMembers] = useState(null);
   const [idInput, setIdInput] = useState("");
   const [pdInput, setPdInput] = useState("");
+  const navigate = useNavigate();
   //   let idArr = [];
 
   //   useEffect(() => {
@@ -41,10 +43,11 @@ function ConnexionPage() {
         return console.log("You're not connected");
       }
       localStorage.setItem("user", JSON.stringify(response.data[0]));
-      setLoading(false);
+      navigate(`/`);
+      // setLoading(false);
     } catch (error) {
       console.log(error);
-      setLoading(false);
+      // setLoading(false);
     }
     // idArr.push(idInput);
     // idArr.push(pdInput);

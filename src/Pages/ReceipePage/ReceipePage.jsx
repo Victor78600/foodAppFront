@@ -3,12 +3,14 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import "./RecipePage.css";
+import { useNavigate } from "react-router-dom";
 
 import { Link } from "react-router-dom";
 
 function ReceipePage() {
   const [oneReceipe, setOneReceipe] = useState(null);
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
 
   const [isFavorite, setIsFavorite] = useState(null);
   // const [favMember, setFavMember] = useState(null);

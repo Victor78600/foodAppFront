@@ -10,6 +10,7 @@ import logoBonApp from "../images/logoBonApp.png";
 import searchIcon from "../images/searchIcon.png";
 
 function SearchBar() {
+
   /* const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
@@ -110,6 +111,9 @@ function SearchBar() {
   /*   const [searchParams] = useSearchParams();
   const query = searchParams.get("query");
   console.log(query); */
+  const handleLogout  = () => {
+    localStorage.clear()
+  }
 
   return (
     <div className="top-search">
@@ -134,10 +138,17 @@ function SearchBar() {
           </Link>
         </div>
       </div>
+      <div className="logButton">
       <div className="LoginButton">
         <Link to={`/connection`}>
           <button>Login</button>
         </Link>
+        </div>
+      <div className="LogoutButton">
+        <Link to={`/connection`}>
+          <button onClick={handleLogout}>Logout</button>
+        </Link>
+      </div>
       </div>
     </div>
   );

@@ -101,9 +101,17 @@
   margin-bottom: 0rem;
 }
 
-.LoginButton {
+/* .LoginButton {
   padding-right: 5vw;
+} */
+
+.logButton {
+  padding-right: 5vw;
+  display: flex;
+  gap: 10px;
 }
+
+
 
 #searchIcon {
   height: 25px;
