@@ -9,7 +9,7 @@ function ConnexionPage() {
   const [members, setMembers] = useState(null);
   const [idInput, setIdInput] = useState("");
   const [pdInput, setPdInput] = useState("");
-  const navigate = useNavigate();
+const navigate = useNavigate();
   //   let idArr = [];
 
   //   useEffect(() => {
